@@ -25,6 +25,10 @@ Plugin::load('CdnFunctions', ['autoload' => true]);
 $this->loadComponent('CdnFunctions.Cdn' );	
 
 
+
+## Configuring CDN
+
+
 　　In Component file of plugin, specify details of CDN.
 
 　　File: \plugins\CdnFunctions\src\Controller\Component\CdnComponent.php
