@@ -46,8 +46,11 @@ $this->loadComponent('CdnFunctions.Cdn' );
 
 　　Usage:
 　　In controller file of your application,
+  
        $src = 'file_name.jpg';  		// file that is to be copied to CDN
+       
        $dst = '/path/on/cdn/file_name.jpg';	// path on CDN where file is to be copied
+       
        $this->Cdn->sendFile($src, $dst);  
 
 
@@ -67,5 +70,7 @@ $this->loadComponent('CdnFunctions.Cdn' );
 　　In controller file of your application,
   
         $localDir  = '/path/on/local/'; // path on local where all files are to be copied
+	
 　　	$remoteDir = '/path/on/cdn/';  // path on cdn from where we dowload all files
+	
       	$this->Cdn->downloadAllFiles($localDir, $remoteDir);
